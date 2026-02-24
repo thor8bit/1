@@ -1,18 +1,20 @@
-# Othello (Reversi)
+# Othello (Reversi) Web App
 
-A terminal-based Othello game implemented in Python.
+A browser-based Othello game implemented with HTML, CSS, and JavaScript.
 
 ## Run
 
 ```bash
-python othello.py
+python -m http.server 8000
 ```
+
+Then open <http://localhost:8000> in your browser.
 
 ## Features
 
 - 8x8 Othello board with standard starting layout
 - Legal move validation and automatic piece flipping
 - Human vs Human mode
-- Human vs Computer mode (simple greedy AI)
-- Pass turn when no legal move is available
+- Human vs Computer mode (computer plays White with greedy AI)
+- Automatic pass handling when a player has no legal move
 - End-of-game scoring and winner announcement
